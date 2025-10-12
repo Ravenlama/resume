@@ -36,7 +36,6 @@ body{
     background-color: var(--color-background);
     line-height: 1.5;
     margin: 0;
-    padding: 40px 0;
 
     @media screen and (min-width: 768px) {
         font-size: 32px;
@@ -84,6 +83,7 @@ p {
 }
 
 .photo-container{
+    padding-top: 40px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -122,6 +122,7 @@ p {
     max-width: 1200px;
     text-align: center;
     margin: 0 auto;
+    padding-bottom: 40px;
 }
 
 .link{
