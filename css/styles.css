@@ -1,0 +1,133 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v22-latin-regular.woff2') format('woff2');
+    
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v22-latin-600.woff2') format('woff2');
+    
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/poppins-v22-latin-900.woff2') format('woff2'); 
+}
+
+:root{
+    --color-primary-light:#2d5257;
+    --color-background:#babfbf;
+    --color-link-hover:#4c7505;
+}
+
+body{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-primary-light);
+    background-color: var(--color-background);
+    line-height: 1.5;
+    margin: 0;
+
+    @media screen and (min-width: 768px) {
+        font-size: 32px;
+    }
+}
+
+address{
+    font-style: normal;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    font-style: normal;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+.main-title{
+    font-weight: 900;
+    font-size: 32px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 64px;
+    }
+}
+
+.my-photo{
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        border-radius: 10%;
+        height: 500px;
+        width: 400px;
+        object-fit: cover;
+    }
+}
+
+.photo-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+
+    }
+}
+
+.personal-text{
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.knowledge{
+    text-align: center;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+    }
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.link{
+    color: var(--color-primary-light);
+    transition: color 0.3s;
+}
+
+.link:hover{
+    color: var(--color-link-hover);
+}
