@@ -111,9 +111,15 @@ p {
 
 .contact-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        gap: 40px;
+    }
 }
 
 .jenius-link{
@@ -123,6 +129,7 @@ p {
     width: 100%;
     max-width: 360px;
     display: block;
+    text-align: center;
 }
 
 .jenius-link:hover{
@@ -153,6 +160,10 @@ p {
 }
 
 .footer{
-    padding: 40px 0;
+    padding: 20px 0;
     background-color: var(--color-header);
+
+    @media screen and (min-width: 768px) {
+        padding: 40px 0;
+    }
 }
